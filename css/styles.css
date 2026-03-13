@@ -185,6 +185,61 @@ img {
 }
 
 /* ===========================================
+   Hero Section Styles
+   Home/Hero section with name, tagline, CTA
+   =========================================== */
+
+.hero-section {
+    /* TODO: Hero section styling
+     * - Full width, centered content
+     * - Background gradient or color
+     * - Padding for visual impact
+     */
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    padding: 80px 40px;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.hero-content {
+    /* TODO: Hero content container */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h2 {
+    /* TODO: Hero heading (your name) */
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 15px;
+    border-bottom: none;
+    padding: 0;
+}
+
+.tagline {
+    /* TODO: Tagline styling */
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.btn-primary {
+    /* TODO: Primary CTA button */
+    background: white;
+    color: var(--primary-color);
+    padding: 15px 35px;
+    font-size: 1.1rem;
+}
+
+.btn-primary:hover {
+    /* TODO: CTA button hover */
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+}
+
+/* ===========================================
    TASK 5: About Section - Flexbox Layout
    Image and text side by side
    =========================================== */
@@ -531,6 +586,23 @@ img {
  */
 
 @media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 25px;
+    }
+
+    .hero-content h2 {
+        font-size: 2.2rem;
+    }
+
+    .tagline {
+        font-size: 1.1rem;
+    }
+
+    .btn-primary {
+        padding: 12px 28px;
+        font-size: 1rem;
+    }
+
     .site-header {
         padding: 0 20px;
         height: auto;
@@ -599,6 +671,23 @@ img {
  */
 
 @media (max-width: 576px) {
+    .hero-section {
+        padding: 40px 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .tagline {
+        font-size: 0.95rem;
+    }
+
+    .btn-primary {
+        padding: 10px 24px;
+        font-size: 0.9rem;
+    }
+
     .site-header {
         padding: 15px;
     }
